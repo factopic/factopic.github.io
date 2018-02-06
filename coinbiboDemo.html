@@ -1,362 +1,200 @@
+
+
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="ISO-8859-1">
-<title>Coin</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
+<title>Domain Seller</title>
 
-	<!-- Optional Bootstrap theme -->
-  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  	
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="icon" href="img/logo red small.jpg">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <!-- Optional Bootstrap theme -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    
+  <style>
+  
+  
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 650px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      			background-color: #f1f1f1;
+      			height: 100%;
+    		}
+        
+    /* On small screens, set height to 'auto' for the grid */
+           @media screen and (max-width: 767px) {
+      										.row.content {height: auto;} 
+    		
+									}
+									
 
-
-
-<style type="text/css">
-
-
-
-/*  Related Navbar-------------------------------------------------------------------------*/
-
-	
-	.box {		
-				padding:5px;
-			}
+#box-wrapper{
+				background-image:url(../img/flower pot.jpg);
+				background-size:cover;
+				background-attachment:scroll;
+				background-position:center;
+				background-repeat:no-repeat;
+				min-height:840px;
+			}	
 			
-			
-	
-	
-	.navbar li a, .navbar .navbar-brand {
-     										 color: #FFA567 !important;
-     										 font-size: 20px;
-     										 font-family: monospace;
-  											}
 
-	.navbar {
-      			margin-bottom: 10px;
-      			padding: 20px; 
-      			background-color: #6F7085;				
-      			z-index: 9999;
-      			border: 0;
-    			font-size: 12px !important;
-      			line-height: 1.42857143 !important;
-      			letter-spacing: 2px;
-			    border-radius: 0%;
-			    font-family: "Arial" , sans-serif;			/* Montserrat  */
-			    
-  		}
-  
-  
-  .navbar-nav li a:hover, .navbar-nav li.active a {
-      color: white !important;
-      background-color: #D8D5DE !important;
-  }
-  
-  
-  .navbar-default .navbar-toggle
-   {
-      border-color: transparent;
-      color: #fff !important;
-      position: fixed;
-  	}
-  
-  
-  
-  	.heading{
-				font-family: serif; 
-				font-weight: bolder;
-				text-transform: uppercase;
-				border-color: black;
-				border-radius: 100px;
-				font-size: 17px;
-				text-align: left;
-				position: absolute;
-				color: white;
+			
+
+	
+.woe{
+		bottom:05px;
+   		 position: fixed;
+   		 right: 60px;
+		}	
+
+.woeH {
+			position: fixed;
+   			
+   			right:20%;
+		}		
+		
+		
+.woeC{
+			top:50%;
+			position:fixed;
+		
+		}		
+
+.card {
+   		 box-shadow: 0px 2px 8px 0px ;
+   		padding:5px
+   		 
+		}
+
+
+
+
+				
+				
+.mail{
+		width:30px;
+		margin: 15px;
+	}
+	
+
+.mail img {
+			float:left;
+			width: 100%;
+			border-radius: 50%;
+		}
+   
+   
+   
+   
+ h12	{
+						
+						font-family: Courier New;		
+						color: white;	
+						letter-spacing:01px; 
+	 					font-size:25px;		
+	 					font-weight: bold;	
+	 					font-variant:small-caps; 
+		
+  					
+					}
+	
+    
+    
+h11 {
+		font-family: Lucida Console;		
+		color: white;	
+		letter-spacing:0px; 
+	 	font-size:45px;		
+	 	font-weight: normal;	
+	 	text-transform: uppercase;  
+	
 	}
 
+	 		
+h8{
+		font-family: Courier New;		
+		color: white;	
+		letter-spacing:0px;  	
+	 	font-size:20px;		
+		text-transform: none;   
+		font-weight: bold;
+	  }
+   
+   
+  </style>
   
   
-
-
-/*	// Related to Table-------------------------------------------------------------*/
-
-
-.container-table{
-				
-				margin: 10px;
-				padding: 10px;
-				border: 1px solid;
-				width: 70%;
-				
-				}
-
-
-
-
-
-
-
-
-/*             Section 1		*/
-
-
-
-.parallax {
-    /* The image used */
-    background-image:url(../img/flower pot.jpg);		
-	
-    /* Full height */
-    height: 100%; 
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-
-
-
-
-
-
-div.polaroid {
-    width: 304px;
-    padding: 10px 10px 20px 10px;
-    border: 1px solid #BFBFBF;
-    background-color: white;
-    box-shadow: 10px 10px 5px #aaaaaa;
-}
-
-div.rotate_right {
-    float: left;
-    -ms-transform: rotate(7deg); /* IE 9 */
-    -webkit-transform: rotate(7deg); /* Safari */
-    transform: rotate(7deg);
-}
-
-div.rotate_left {
-    float: left;
-    -ms-transform: rotate(-8deg); /* IE 9 */
-    -webkit-transform: rotate(-8deg); /* Safari */
-    transform: rotate(-8deg);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	
-/*	// Related to footer-------------------------------------------------------------*/
-	
-	.bd-footer
-				{
-					width: 100%;
-					background-color: black;
-					
-					bottom: 0px;
-					position: relative;
-					margin: 10px 0 0 0;
-					padding: 10px;
-					
-					font-family: serif;
-					font-size: 16px;
-					
-					border-left: 18px solid green;
-					 
-				}
-		
-	.bd-footer-links
-					{
-						float: left;
-						padding: 05px;
-						
-					}		
-					
-					
-					
-					
-	.bd-footer ul a{
-   						 display: inline-block;
-   						 color:  white;
-   						 
-					}
-
-	.bd-footer ul li 
-					 {
-    						display: inline-block;
-    						padding: 15px;
-    						
-						}
-
-	
-
-	.copyright
-				 {
-   					 float: left;
-				}
-	
-	
-
-
-
-
-	
-
-		
-</style>
-
-
-
-
-
-
-
-
-
-
-
-
 </head>
-
-
-
 
 
 
 <body>
 
 
-<!--  Nav bar -->
 
-
-	<nav class="navbar navbar-default" >
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        		<span class="icon-bar"></span>
-      	  		<span class="icon-bar"></span>
-        		<span class="icon-bar"></span>                        
-     		 </button>
+<div class="jumbotrons" id="box-wrapper">
+	
+	<div class="container text-center woeH" >
+		<div class="row">
+			<div class="col-sm-offset-5 col-sm-4">
+					<h12>www.techgags.com</h12>
+					<h12>www.factyogi.com</h12>
+					<h12>www.factopic.com</h12>
+					<h12>www.factpick.com</h12>
+					<h12>www.kannadatech.com</h12>
+					<h12>www.factology.in</h12>
+					<h12>www.factpedia.in</h12>
+			</div>		
+		</div>	
 			
-		</div>
-			<div class="heading col-sm-3">
+	</div>	
+
+	
+	
 				
-			<h1>  Coinbibo </h1>
-			</div>
-			<div class="collapse navbar-collapse" id="#myNavbar">
-			
-			<ul class="nav navbar-nav navbar-right">
-				<li><a href="index.html">		</a></li>
-				<li><a href="Admin.html">		</a></li>
-				<li><a href="About.html">		</a></li>
-				<li><a href="#contacts">	    </a></li>
-			</ul>
-		</div>
-	</nav>
-	
-		
-
-
-	
-
-
-
-
-
-
-
-
-
-		<div class="parallax"></div>
-
-
-
-		<div class="polaroid rotate_right">
-			<img src="img\flower pot.jpg" alt="Pulpit rock" width="284" height="213">
-			<p class="caption">The pulpit rock in Lysefjorden, Norway.</p>
-		</div>
-
-		<div class="polaroid rotate_left">
-			<img src="img\img-iOwl.jpg" alt="Monterosso al Mare" width="284" height="213">
-			<p class="caption">Monterosso al Mare. One of the five villages in Cinque Terre.</p>
-		</div>
-
-
-
-		<div class="polaroid rotate_right">
-			<img src="img\flower pot.jpg" alt="Pulpit rock" width="284" height="213">
-			<p class="caption">The pulpit rock in Lysefjorden, Norway.</p>
-		</div>
-
-		<div class="polaroid rotate_left">
-			<img src="img\Orange.jpg" alt="Monterosso al Mare" width="284" height="213">
-			<p class="caption">Monterosso al Mare. One of the five villages in Cinque Terre.</p>
-		</div>
-
-
-
-
-		<div class="polaroid rotate_right">
-			<img src="img\flower pot.jpg" alt="Pulpit rock" width="284" height="213">
-			<p class="caption">The pulpit rock in Lysefjorden, Norway.</p>
-		</div>
-
-		<div class="polaroid rotate_left">
-			<img src="img\img-iOwl.jpg" alt="Monterosso al Mare" width="284" height="213">
-			<p class="caption">Monterosso al Mare. One of the five villages in Cinque Terre.</p>
-		</div>
-
-
-
-
-
-	
-
-<!--  Footer -->
-
-
-	<footer class="bd-footer">
-		<div class="container">
+	<div class="container woeC text-center">
+		<div class="row">
 			<div class="col-sm-12">
-				<ul class="bd-footer-links">
-					<li><a href=""></a></li>
-					<li><a href=""></a></li>
-					<li><a href=""></a></li>
-				</ul>
-			</div>	
+				<h11> These Domain Are For Sale !!! </h11>
+				<h12> Best Names for Youtube Channel, Technical Forums, Magazines, News, Journals, Fitness, Blogs, Tips, Nature, Natural, Healing, Hospitality, Hospitals, Ayurveda, Tips, Remedy, Remedies, etc</h12>
+			</div>
 		</div>
-	</footer>	
+	</div>
+		
+		
+		
+					<div class="container text-center woe">
+					
+						<div class="row">
+							<div class="col-sm-offset-7 col-sm-5 card">
+								<h8> Please contact here: </h8>  
+							</div>
+							
+						</div>		
+						
+						
+						
+						<div class="row ">
+							<div class="col-sm-offset-7 col-sm-5 card">
+								<img src="img/mail.png" class="img-circle" alt="mail" width="30" height="30">
+									<h8>techburfi@gmail.com</h8> 
+								
+							</div>
+							
+						</div>				
+								 
+					
+					</div>
+					
+</div>	
 
- 
-
-    
-    
+	
 </body>
+
 </html>
