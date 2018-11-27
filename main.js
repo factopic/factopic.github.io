@@ -234,7 +234,7 @@ var CoindeltaComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".footer {\r\n    position: fixed;\r\n    left: 0;\r\n    bottom: 0;\r\n    width: 100%;\r\n    background-color:rgb(85, 87, 90);\r\n    color: white;\r\n    text-align: center;\r\n }\r\n\r\n\r\n\r\nheader{\r\n   \r\n    font-size: 50px;\r\n    color: rgb(100, 241, 35);\r\n    \r\n    font-weight: 900;\r\n    font-family:  'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;\r\n    text-align: center;\r\n}"
+module.exports = "\r\n/* .footer class*/\r\n\r\n.footer {\r\n    position: fixed;\r\n    left: 0;\r\n    bottom: 0;\r\n    width: 100%;\r\n    height: 90px;\r\n    background-color:rgb(85, 87, 90);\r\n    color: white;\r\n    text-align: center;\r\n }\r\n\r\n/* header tag*/\r\n\r\nheader{\r\n   \r\n    font-size: 35px;\r\n    color: rgb(100, 241, 35);\r\n    \r\n    font-weight: 900;\r\n    font-family:  'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;\r\n    text-align: center;\r\n}"
 
 /***/ }),
 
@@ -297,7 +297,7 @@ var FooterComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".nav-bar{\r\n  \r\n    background-color:rgb(85, 87, 90);\r\n    width: 100%;\r\n    height: 120px;\r\n    margin: 0 , 0 , 10 ,0px;\r\n    \r\n  }\r\n\r\n\r\n\r\nheader{\r\n   \r\n    font-size: 50px;\r\n    color: rgb(100, 241, 35);\r\n    \r\n    font-weight: 900;\r\n    font-family:  'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;\r\n    text-align: center;\r\n}"
+module.exports = ".nav-bar{\r\n  \r\n    background-color:rgb(85, 87, 90);\r\n    width: 100%;\r\n    height: 90px;\r\n    margin: 0 , 0 , 10 ,0px;\r\n    \r\n  }\r\n\r\n\r\n/* header tag*/\r\n\r\n\r\nheader{\r\n   \r\n    font-size: 35px;\r\n    color: rgb(100, 241, 35);\r\n    \r\n    font-weight: 900;\r\n    font-family:  'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;\r\n    text-align: center;\r\n}"
 
 /***/ }),
 
